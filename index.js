@@ -5,7 +5,7 @@ const port = process.env.PORT || 8080
 
 
 app.get('/', (req, res) => {
-  res.send('[server]: Server is running at https://localhost:${port}');
+  res.send(`[server]: Server is running at https://localhost:${port}`);
 });
 
 app.get('/hi', (req, res) => {
